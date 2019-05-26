@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+    {% block contents %}
+        <div class="card" style="margin: 10px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ details.title }}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{ details.pub_date }}</h6>
+                <p class="card-text">{{ details.body }}</p>
+                <a href="{% url 'home' %}" class="card-link">back</a>
+            </div>
+        </div>
+    {% endblock %}
